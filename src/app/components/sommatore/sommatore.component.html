@@ -1,0 +1,13 @@
+<div>
+    <h2>Sommatore</h2>
+    <label for="num1">Numero 1:</label>
+    <input type="number" [(ngModel)]="num1" id="num1" />
+    
+    <label for="num2">Numero 2:</label>
+    <input type="number" [(ngModel)]="num2" id="num2" />
+    
+    <button (click)="calcolaSomma()">Calcola Somma</button>
+  
+    <h3>Somma: {{ somma }}</h3>
+  </div>
+  
