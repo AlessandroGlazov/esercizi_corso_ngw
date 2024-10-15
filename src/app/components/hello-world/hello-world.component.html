@@ -6,3 +6,22 @@
 
 <p>Il tuo nome è {{ name }}</p>
 <button (click)="onClick()">Cliccami</button>
+
+
+
+
+<button (click)="ActMsgScr()">  </button>
+
+<div *ngIf="msgscr">
+  <h1>HAI TROVATO L'EASTER EGG</h1>
+  <h2>Ecco a te una gift card da 70$</h2>
+  <h4>2G56-1FK44-FAL2-1F3L-CXC2</h4>
+</div>
+
+<button (click)="toggleShow()">SparkingZERO FREE DOWNLOAD</button>
+<div *ngIf="isLoading">Caricamento in corso . . . </div>
+
+<div *ngIf="showText">
+    <h1>caught in 4k📸📸📸</h1>
+  <img src="https://png.pngtree.com/element_our/20190530/ourmid/pngtree-cute-simulation-kitten-png-image_1258019.jpg" alt="Kitten" />
+</div>
