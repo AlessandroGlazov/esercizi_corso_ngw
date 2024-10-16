@@ -1,4 +1,6 @@
 
+  
+
  <h1>Nome: {{ name }}</h1>
 <h1>Cognome: {{ surname }}</h1>
 <h1>Età: {{ age }}</h1>
@@ -25,3 +27,39 @@
     <h1>caught in 4k📸📸📸</h1>
   <img src="https://png.pngtree.com/element_our/20190530/ourmid/pngtree-cute-simulation-kitten-png-image_1258019.jpg" alt="Kitten" />
 </div>
+
+<ul> 
+  <li *ngFor="let frutti of fruits; let i = index">
+    {{ i + 1}}. {{frutti}}
+    
+  </li>
+</ul>
+<!--  -->
+
+  <div *ngFor="let item of citta">
+    <h6> ........city........</h6>
+     <p> Nome: {{item.nome}}</p>
+     <p> Cap: {{item.cap}}</p>
+  </div>
+    
+<div>
+    <h6>........persone........</h6>
+    <ul>
+      <li *ngFor="let persona of persone; let i = index">
+        {{ i + 1 }}. Nome: {{ persona.nomee }}, Età: {{ persona.eta }}
+      </li>
+    </ul>
+  </div>
+
+
+  
+
+  <table>
+    <thead>
+      <tbody *ngFor="let item of prodotti">
+        <td>{{item.prodotto}}</td>
+        <td>{{item.prezzo}}</td>
+ 
+      </tbody>
+    </thead>
+  </table>

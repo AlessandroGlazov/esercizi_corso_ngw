@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './hello-world.component.html',
   styleUrl: './hello-world.component.css',
   imports: [CommonModule] 
+import { AppComponent } from './../../app.component';
 
 })
 export class HelloWorldComponent {
@@ -19,7 +20,36 @@ export class HelloWorldComponent {
   msgscr: boolean = true
   isLoading: boolean = false;
   showText: boolean = false;
+  fruits = ["mela", "banana", "arancia"];
+  citta = 
+  [ 
+    {cap:1,nome:'Roma'},
+    {cap:2,nome:'Palermo'},
+    {cap:3,nome:'Milano'},
+    {cap:4,nome:'Napoli'},
+  ]
 
+  persone =
+   [
+    { nomee: 'Alessandro', eta: 25 },
+    { nomee: 'Giulia', eta: 30 },
+    { nomee: 'Marco', eta: 22 },
+    { nomee: 'Sara', eta: 28 }
+  ];
+
+  export class AppComponent {
+  paesi: string[] = 
+  ['Italia', 'Spagna', 'Francia', 'Germania'];
+
+
+  prodotti=[
+    {prodotto:'coca cola', prezzo:'0,99 euro'},
+    {prodotto:'pepsi', prezzo:'0,80 euro'},
+    {prodotto:'fanta', prezzo:'0,89 euro'},
+    {prodotto:'icnusa', prezzo:'1,19 euro'},
+]
+
+  
 
 saluta() {
   console.log("ciao")
